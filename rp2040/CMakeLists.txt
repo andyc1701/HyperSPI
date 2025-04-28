@@ -6,14 +6,14 @@ set(CMAKE_SYSTEM_NAME Generic)
 # Turn this setting to ON if your rp2040 is not detected after firmware upload and reset
 set(BOOT_WORKAROUND ON)
 
-# Default output data pin for the non-SPI LED strips (only for sk6812/ws2812b)
-set(OUTPUT_DATA_PIN 14)
+# Default output data pin for the non-SPI LED strips (only for sk6812/ws2812b) was 14
+set(OUTPUT_DATA_PIN 17)
 
 # Use multi-segment, starting index of second led strip or OFF to disable
-set(SECOND_SEGMENT_INDEX OFF)
+set(SECOND_SEGMENT_INDEX 158)
 
 # If multi-segment is used and it's reversed, set this option to ON to enable reversing
-set(SECOND_SEGMENT_REVERSED OFF)
+set(SECOND_SEGMENT_REVERSED ON)
 
 # HyperSPI communication interface with Raspberry Pi
 set(OUTPUT_SPI_DATA_PIN 4)
